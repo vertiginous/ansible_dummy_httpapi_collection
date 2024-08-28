@@ -1,4 +1,4 @@
-# Local Mock_api Collection
+# Local Dummy HTTPAPI plugin Collection
 
 This repository contains the `local.dummy` Ansible Collection.  It contains a plugin for working with a dummy flask rest API I created.  
 I wrote it so that I can better understand the program flow, parameters, and configuration of
