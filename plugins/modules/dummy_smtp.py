@@ -67,17 +67,28 @@ extends_documentation_fragment:
 '''
 
 EXAMPLES = '''
-- name: Update SMTP configuration
-  dummy_api_smtp:
-    enabled: true
-    encrypted: true
-    password: "{{ smtp_password }}"
-    port: 25
-    recipients: "admin@example.com,support@example.com"
-    sender_email: "noreply@example.com"
-    server: "smtp.example.com"
-    user: "smtp_user"
-
+- name: Update SMTP Configuration on devapi device
+  hosts: all
+  connection: httpapi
+  gather_facts: false
+  tasks:
+    - name: Configure SMTP settings
+      local.dummy.dummy_smtp:  # Replace with the actual name of your module
+        enabled: true
+        encrypted: true
+        port: 25
+        recipients:
+          - "hwadmin@domain.com"
+          - "swadmin@domain.com"
+          - "on-call@domain.com"
+        sender_email: "root@dummy-device.domain.com"
+        server: "smtp-server.domain.com"
+## In inventory:
+  vars:
+    ansible_user: admin
+    ansible_password: password
+    ansible_connection: httpapi
+    ansible_network_os: dummy
 '''
 
 RETURN = '''

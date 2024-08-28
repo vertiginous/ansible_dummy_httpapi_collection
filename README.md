@@ -1,6 +1,11 @@
-# Mock Mock_api Collection
+# Local Mock_api Collection
 
-This repository contains the `mock.mock_api` Ansible Collection.
+This repository contains the `local.dummy` Ansible Collection.  It contains a plugin for working with a dummy flask rest API I created.  
+I wrote it so that I can better understand the program flow, parameters, and configuration of
+this type of plugin.
+
+### Resources: 
+[Understanding Ansible HttpApi plugins](https://www.lilatomic.ca/posts/ansible_httpapi_plugins/)
 
 <!--start requires_ansible-->
 <!--end requires_ansible-->
@@ -17,26 +22,26 @@ Some modules and plugins require external libraries. Please check the requiremen
 ## Using this collection
 
 ```bash
-    ansible-galaxy collection install mock.mock_api
+    ansible-galaxy collection install local.dummy
 ```
 
 You can also include it in a `requirements.yml` file and install it via `ansible-galaxy collection install -r requirements.yml` using the format:
 
 ```yaml
 collections:
-  - name: mock.mock_api
+  - name: local.dummy
 ```
 
 To upgrade the collection to the latest available version, run the following command:
 
 ```bash
-ansible-galaxy collection install mock.mock_api --upgrade
+ansible-galaxy collection install local.dummy --upgrade
 ```
 
 You can also install a specific version of the collection, for example, if you need to downgrade when something is broken in the latest version (please report an issue in this repository). Use the following syntax where `X.Y.Z` can be any [available version](https://galaxy.ansible.com/mock/mock_api):
 
 ```bash
-ansible-galaxy collection install mock.mock_api:==X.Y.Z
+ansible-galaxy collection install local.dummy:==X.Y.Z
 ```
 
 See [Ansible Using collections](https://docs.ansible.com/ansible/latest/user_guide/collections_using.html) for more details.
