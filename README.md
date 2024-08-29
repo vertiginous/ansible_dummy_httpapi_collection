@@ -17,8 +17,8 @@ Some modules and plugins require external libraries. Please check the requiremen
 ## Included content
 
 <!--start collection content-->
-plugins/httpapi/dummy.py
-plugins/modules/dummy_smtp.py
+    plugins/httpapi/dummy.py  
+    plugins/modules/dummy_smtp.py
 <!--end collection content-->
 
 ## Using this collection
