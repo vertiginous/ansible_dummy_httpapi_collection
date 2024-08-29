@@ -1,8 +1,8 @@
-# Local Dummy HTTPAPI plugin Collection
+# Demo HTTPAPI plugin Collection
 
-This repository contains the `local.dummy` Ansible Collection.  It contains a plugin for working with a dummy flask rest API I created.  
+This is the `local.dummy` Ansible Collection.  It contains a plugin for working with a dummy flask rest API I created.  
 I wrote it so that I can better understand the program flow, parameters, and configuration of
-this type of plugin.
+HTTPAPI plugin.
 
 ### Resources: 
 [Understanding Ansible HttpApi plugins](https://www.lilatomic.ca/posts/ansible_httpapi_plugins/)
@@ -17,6 +17,8 @@ Some modules and plugins require external libraries. Please check the requiremen
 ## Included content
 
 <!--start collection content-->
+plugins/httpapi/dummy.py
+plugins/modules/dummy_smtp.py
 <!--end collection content-->
 
 ## Using this collection
